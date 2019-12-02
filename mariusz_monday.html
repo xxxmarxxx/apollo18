@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8" />
+<meta name="author" content="Mariusz">
+<title>MONDAY-1</title>
+<style>
+div {
+  width: 300px;
+  height: 300px;
+  background-color:rgb(180, 180, 180);
+  border: solid rgb(116, 0, 0);
+  overflow: hidden;
+  position: relative;
+}
+div img{
+  height: 100%;
+  transition: all 1s;
+}
+div:hover img {
+    object-fit: cover;
+    opacity : 0.60;
+filter : alpha(opacity=60);
+transform: scale(1.2);
+}
+#text  {
+    position: absolute;
+    color: rgb(116, 0, 0);
+   bottom: 15px;
+   left: 15px;
+   opacity: 0;
+   transition: opacity 1s;
+}
+#text:hover {
+    opacity: 1 ;
+}
+</style>
+</head>
+<body>
+    <a href="index.html">Home page</a>
+    <h1>This is a H1 heading</h1>
+    <p>Tu jest Paragraf</p>
+    <div>
+    <img src="https://images.pexels.com/photos/64111/pexels-photo-64111.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+    <main id="text">
+    <h2>Text</h2>
+    <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+            lorem ipsum lorem ipsum lorem ipsum
+         </p>
+    </main>
+   </div>
+</body>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8" />
+<meta name="author" content="Mariusz">
+<title>MONDAY-2</title>
+
+<style>
+
+.menu {
+
+    position: relative;
+    background-color: #0002;
+
+}
+
+.menu:hover ul {
+    display: block;
+
+}
+
+.menu ul {
+    display: none;
+    background-color: #0002;
+    position: absolute;
+    top: 4em;
+    left: 0;
+}
+
+.menu ul:before {
+content: "";
+background-color: #0002;
+width: 100%;
+position: absolute;
+top: -4em;
+left: 0;
+height: 4em;
+}
+
+</style>
+
+</head>
+<body>
+
+
+        <div class="menu">
+                <h1>Menu</h1>
+                <ul>
+                <li>Memu 1</li>
+                <li>Memu 2</li>
+                <li>Memu 3</li>
+            </ul>
+              </div> 
+
+
+    
+</body>
+
